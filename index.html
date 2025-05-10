@@ -1,1 +1,68 @@
-:) 什么也没写。。。
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智软 - 智慧与你相伴</title>
+    <style>
+        :root {
+            --primary-blue: #2A5D9F;  /* 主蓝 */
+            --secondary-blue: #5B8FB9; /* 辅助蓝 */
+            --accent-blue: #87C4E0;   /* 点缀蓝 */
+            --pure-white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: var(--primary-blue);
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--pure-white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--secondary-blue);
+            border-radius: 4px;
+        }
+
+        /* 首页Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+            color: var(--pure-white);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* 内容区块 */
+        .section {
+            padding: 3rem 5%;
+            background: var(--pure-white);
+        }
+
+        .section-blue {
+            background: #F7FBFF;
+        }
