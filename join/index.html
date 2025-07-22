@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智软 - 加入我们</title>
+    <style>
+        :root {
+            --primary-blue: #2A5D9F;  /* 主蓝 */
+            --secondary-blue: #5B8FB9; /* 辅助蓝 */
+            --accent-blue: #87C4E0;   /* 点缀蓝 */
+            --pure-white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: var(--primary-blue);
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--pure-white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--secondary-blue);
+            border-radius: 4px;
+        }
+
+        /* 首页Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--accent-blue) 100%);
+            color: var(--pure-white);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* 内容区块 */
+        .section {
+            padding: 3rem 5%;
+            background: var(--pure-white);
+        }
+
+        .section-blue {
+            background: #F7FBFF;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: var(--pure-white);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(42,93,159,0.1);
+        }
+
+        /* 按钮样式 */
+        .cta-button {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-blue);
+            transform: scale(1.05);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="logo.png" alt="智软科技" style="height: 50px">
+        <div class="nav-links">
+            <div>
+                <a href="">首页</a>
+                <a href="products">产品</a>
+                <a href="about">关于</a>
+                <a href="join">加入</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-banner">
+        <div class="hero-text">
+            <h1>加入我们</h1>
+            <p>加入智软科技，开启智慧未来</p>
+            <button class="cta-button" style="margin-top: 1.5rem">了解更多</button>
+        </div>
+    </section>
+
+    <section class="section section-blue">
+        <h2>核心优势</h2>
+        <div class="card-container">
+            <div class="service-card">
+                <h3>技术创新</h3>
+                <p>融合AI、大数据等前沿技术...</p>
+            </div>
+            <div class="service-card">
+                <h3>领域覆盖</h3>
+                <p>覆盖游戏、代码编辑器、操作系统等多个领域...</p>
+            </div>
+            <div class="service-card">
+                <h3>专业团队</h3>
+                <p>资深工程师与行业专家保驾护航...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>智慧产品</h2>
+        <div class="card-container">
+            <div class="service-card">
+                <h3>操作系统</h3>
+                <p>MythOS操作系统，一个采用现代UEFI引导及Intel x86-64架构...</p>
+                <a href="products/MythOS">了解更多...</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--primary-blue); color: white; padding: 2rem 5%; text-align: center">
+        <p>Copyright © 2024~2025 智软科技 版权所有</p>
+    </footer>
+</body>
+</html>
