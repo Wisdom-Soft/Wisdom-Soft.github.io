@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WisdomSoft - 智软科技团队</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .navbar {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #3b82f6;
+        }
+        
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #1e293b, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #475569;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin: 60px 0 32px;
+            text-align: center;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+        
+        .member {
+            background: white;
+            border-radius: 16px;
+            padding: 24px 16px;
+            text-align: center;
+            box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s;
+        }
+        
+        .member:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05);
+        }
+        
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .member h3 {
+            font-size: 1.25rem;
+            margin-bottom: 4px;
+        }
+        
+        .member .role {
+            color: #3b82f6;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .member .desc {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .projects {
+            margin: 60px 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            margin: 12px 0;
+        }
+        
+        .tag {
+            background: #e2e8f0;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #334155;
+        }
+        
+        /* 页脚 */
+        .footer {
+            border-top: 1px solid #e2e8f0;
+            padding: 32px 0;
+            margin-top: 60px;
+            text-align: center;
+            color: #64748b;
+        }
+        
+        @media (max-width: 700px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">WisdomSoft · 智软科技团队</div>
+            <div class="nav-links">
+                <a href="#">首页</a>
+                <a href="#team">团队</a>
+                <a href="#projects">项目</a>
+                <a href="#contact">联系</a>
+            </div>
+        </nav>
+
+        <!-- 主视觉 -->
+        <section class="hero">
+            <h1>WisdomSoft<br>智软 智慧与你相伴</h1>
+            <p>我们是来自不同学校的开发者，利用课余时间做点有意思的项目。</p>
+        </section>
+        
+        <h2 class="section-title" id="team">👥 团队成员</h2>
+        <div class="team-grid">
+            <div class="member">
+                <div class="avatar">🔥</div>
+                <h3>Max Sinoh</h3>
+                <div class="role">后端 / 项目</div>
+                <div class="desc">喜欢C语言和Python，负责大部分的开发</div>
+            </div>
+            
+            <div class="member">
+                <div class="avatar">💥</div>
+                <h3>Song Dong</h3>
+                <div class="role">设计</div>
+                <div class="desc">喜欢玩MC，负责设计</div>
+            </div>
+            
+            <div class="member">
+                <div class="avatar">⭐</div>
+                <h3>Jim Zhang</h3>
+                <div class="role">？？？</div>
+                <div class="desc">神秘人，不知道负责什么</div>
+            </div>
+            
+            <div class="member">
+                <div class="avatar">✨</div>
+                <h3>？ Jiang</h3>
+                <div class="role">？？？</div>
+                <div class="desc">神秘人，不知道负责什么</div>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="projects">📁 在做的项目</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-title">MythOS</div>
+                <p>一个基于x86-64 UEFI架构的现代操作系统，目前是团队主力项目</p>
+                <div class="project-tags">
+                    <span class="tag">操作系统</span>
+                    <span class="tag">底层开发</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-title">Sinco</div>
+                <p>一个全新的现代编程语言</p>
+                <div class="project-tags">
+                    <span class="tag">编程语言</span>
+                    <span class="tag">底层开发</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-title">本网站</div>
+                <p>就是这个，纯HTML/CSS，托管在GitHub Pages</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" style="text-align: center; margin: 80px 0 40px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 16px;">📮 加入我们</h2>
+            <p style="color: #475569;">想要加入我们？请发邮件给Max</p>
+            <a href="mailto:team@4ward.dev" style="display: inline-block; margin-top: 20px; background: #3b82f6; color: white; padding: 12px 32px; border-radius: 40px; text-decoration: none; font-weight: 600;">acjh666@163.com</a>
+        </section>
+
+        <footer class="footer">
+            <p>WisdomSoft © 2024~2026 智软科技团队</p>
+        </footer>
+    </div>
+</body>
+</html>
